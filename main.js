@@ -18,10 +18,10 @@ increment.addEventListener("click", function () {
         timer = 300;
     }
     if (level == 4) {
-        timer = 10;
+        timer = 100;
     }
     levelElement.value = level;
-    console.log("level", level);
+//     console.log("level", level);
 })
 const decrement = document.getElementById("decrement");
 decrement.addEventListener("click", function () {
