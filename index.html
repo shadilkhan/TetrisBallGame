@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Ball Game</title>
+    <style>
+      body {
+        background-color: rgb(176, 204, 245);
+      }
+
+      #level {
+        display: inline-block;
+        font-size: 14px;
+        width: 50px;
+        background-color: white;
+      }
+
+      .level {
+        position: absolute;
+        font-size: 14px;
+        left: 623px;
+      }
+
+      #score {
+        display: inline-block;
+        font-size: 14px;
+        width: 50px;
+        background-color: white;
+      }
+
+      .score {
+        font-size: 14px;
+        margin-left: 132px;
+      }
+
+      div {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+      }
+
+      #tetris {
+        background-color: white;
+      }
+
+      canvas {
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        border: 3px solid rgb(0, 0, 0);
+      }
+
+      #leftarrow {
+        padding: 2px 14px;
+        position: absolute;
+        left: 613px;
+      }
+
+      #rightarrow {
+        padding: 2px 15px;
+        position: absolute;
+        left: 707px;
+      }
+
+      #downarrow {
+        padding: 2px 20px;
+        position: absolute;
+        left: 657px;
+      }
+
+      #increment {
+        background-color: white;
+      }
+
+      #decrement {
+        background-color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <span class="level">Level:</span>
+      <span class="score">Score:</span>
+    </div>
+    <div>
+      <button id="decrement">-</button>
+      <input type="number" class="textbox" value="1" id="level" />
+      <button id="increment">+</button>
+      <input type="number" class="textbox" value="0" id="score" />
+    </div>
+    <canvas id="tetris" width="139" height="553"></canvas>
+    <div id="control">
+      <button id="leftarrow">&larr;</button>
+      <button id="downarrow">&darr;</button>
+      <button id="rightarrow">&rarr;</button>
+    </div>
+    <!-- <script src="ballpiece.js"></script> -->
+    <script src="ball.js"></script>
+  </body>
+</html>
