@@ -14,9 +14,10 @@
       }
 
       .level {
-        position: absolute;
         font-size: 14px;
-        left: 623px;
+        padding-right: 61px;
+        margin-left: 32px;
+        
       }
 
       #score {
@@ -28,7 +29,6 @@
 
       .score {
         font-size: 14px;
-        margin-left: 132px;
       }
 
       div {
@@ -51,20 +51,19 @@
 
       #leftarrow {
         padding: 2px 14px;
-        position: absolute;
-        left: 613px;
       }
 
       #rightarrow {
         padding: 2px 15px;
-        position: absolute;
-        left: 707px;
       }
 
       #downarrow {
         padding: 2px 20px;
-        position: absolute;
-        left: 657px;
+      }
+      #control{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       }
 
       #increment {
@@ -74,16 +73,21 @@
       #decrement {
         background-color: white;
       }
-      input::-webkit-outer-spin-button,
+        input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
           -webkit-appearance: none;
           margin: 0;
+        }
+        .head{
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
     </style>
   </head>
 
   <body>
-    <div>
+    <div class="head">
       <span class="level">Level:</span>
       <span class="score">Score:</span>
     </div>
@@ -99,7 +103,6 @@
       <button id="downarrow">&darr;</button>
       <button id="rightarrow">&rarr;</button>
     </div>
-    <!-- <script src="ballpiece.js"></script> -->
-    <script src="main.js"></script>
+    <script src="ball.js"></script>
   </body>
 </html>
